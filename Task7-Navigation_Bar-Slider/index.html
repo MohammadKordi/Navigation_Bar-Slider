@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar and Slider</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="#services">Services</a>
+                <ul class="dropdown">
+                    <li><a href="#webdesign"></a></li>
+                    <li><a href="#marketing"></a></li>
+                </ul>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="img/coding2.png" class="slide" alt="Image 1">
+            <img src="img/coding3.png" class="slide" alt="Image 2">
+            <img src="img/coding1.png" class="slide" alt="Image 3"  height="300px" width="300px">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="content">
+        <section id="home">Home Section
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam. Maiores 
+                repudiandae nihil voluptatibus!
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.</p>
+        </section>
+        <section id="services">Services Section  <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facilis a veritatis dolores nam modi ad 
+            dolore, nihil debitis facere inventore, consequuntur 
+            nostrum temporibus suscipit nulla aliquam. Maiores 
+            repudiandae nihil voluptatibus!
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facilis a veritatis dolores nam modi ad 
+            dolore, nihil debitis facere inventore, consequuntur 
+            nostrum temporibus suscipit nulla aliquam.Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facilis a veritatis dolores nam modi ad 
+            dolore, nihil debitis facere inventore, consequuntur 
+            nostrum temporibus suscipit nulla aliquam.Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facilis a veritatis dolores nam modi ad 
+            dolore, nihil debitis facere inventore, consequuntur 
+            nostrum temporibus suscipit nulla aliquam.</p></section>
+        <section id="about">About Section
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam. Maiores 
+                repudiandae nihil voluptatibus!
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.</p>
+        </section>
+        <section id="contact">Contact Section
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam. Maiores 
+                repudiandae nihil voluptatibus!
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Facilis a veritatis dolores nam modi ad 
+                dolore, nihil debitis facere inventore, consequuntur 
+                nostrum temporibus suscipit nulla aliquam.</p>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

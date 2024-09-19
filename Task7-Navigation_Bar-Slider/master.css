@@ -1,0 +1,168 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(220, 220, 220);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;   
+    top: 0;
+    width: 100%;
+    background-color: #333; 
+    overflow: hidden;
+    z-index: 1000;    
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    padding: 14px 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: 100px auto; /* Space for fixed navbar */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: 0.5s ;
+}
+
+.slide {
+    min-width: 100%;
+    border-radius: 10px;
+    display: none; /* Hide slides by default */
+}
+
+.slide.active {
+    display: block; /* Show active slide */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.content {
+    padding: 5px 20px;
+}
+
+section {
+    height: 350px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; 
+    }
+    
+    .navbar a {
+        padding: 10px;
+        text-align: left; 
+    }
+
+    .slider {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column; 
+    }
+    
+    .navbar a {
+        padding: 10px;
+        text-align: left; 
+    }
+    .slide {
+        min-width: 50%;
+        border-radius: 10px;
+        display: none; 
+    }
+    button {
+        padding: 8px;
+        font-size: 14px; 
+    }
+
+    section {
+        height: 400px; 
+    }
+}
+@media (max-width: 366px) {
+    button {
+        padding: 8px;
+        font-size: 14px; 
+    }
+
+    section {
+        height: 600px; 
+    }
+}
+@media (max-width: 260px) {
+    button {
+        padding: 8px;
+        font-size: 14px; 
+    }
+
+    section {
+        height: 700px; 
+    }
+}
